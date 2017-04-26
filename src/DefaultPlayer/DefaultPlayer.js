@@ -134,7 +134,7 @@ export default videoConnect(
         }
     }),
     (videoEl, state) => ({
-        onFullscreenClick: () => toggleFullscreen(videoEl.parentElement),
+        onFullscreenClick: () => toggleFullscreen(videoEl),
         onVolumeClick: () => toggleMute(videoEl, state),
         onCaptionsClick: () => toggleTracks(state),
         onPlayPauseClick: () => togglePause(videoEl, state),
